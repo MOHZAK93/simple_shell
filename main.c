@@ -66,6 +66,7 @@ int main(int argc, char **argv)
 
 	while (argc)
 	{
+		/*If is interactive mode*/
 		if (isatty(STDIN_FILENO) && fp == stdin)
 			prt_stdo("#cisfun$ ");
 		n_chars = getline(&line, &len, fp);
