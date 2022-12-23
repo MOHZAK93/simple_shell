@@ -61,7 +61,9 @@ int main(int argc, char **argv)
 	int n_chars = 0, n_return = 0, c_spaces = 0, i = 0;
 	FILE *fp = stdin;
 
+	ex_name = argv[0];
 	hist = 0;
+
 	while (argc)
 	{
 		if (isatty(STDIN_FILENO) && fp == stdin)
