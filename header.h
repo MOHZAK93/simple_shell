@@ -1,22 +1,25 @@
-#ifndef HEADER_H
-#define HEADER_H
+#ifndef SSH_H
+#define SSH_H
 
 /*Headers*/
 #include <stdio.h>
 #include <stdlib.h>
+
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/wait.h>
 #include <unistd.h>
+
 #include <errno.h>
+
 #include <stdarg.h>
 #include <string.h>
 
 /*Global Variables*/
-extern char **environ;
-char *ex_name;
-int hist;
+extern char **environ;/*Environemnt*/
+char *ex_name; /*;Shell's executable name*/
+int hist;/*Number of line in the shell*/
 
 /*Structures*/
 
@@ -85,4 +88,4 @@ int _strncmp(char *s1, char *s2, int n);
 lpath *add_node_end(lpath **head, char *str);
 void free_list(lpath *head);
 
-#endif /*HEADER_H*/
+#endif /*SSH_H*/
