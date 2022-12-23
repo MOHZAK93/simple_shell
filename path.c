@@ -7,6 +7,7 @@
  */
 char *_getenv(char *name)
 {
+	char **environ = NULL;
 	unsigned int i = 0;/*Runner*/
 	char *value = NULL;
 	int b = 1;/*Boolean True = 0*/

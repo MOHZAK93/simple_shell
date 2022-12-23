@@ -7,6 +7,7 @@
  */
 int exc_ext(char **av)
 {
+	char **environ = NULL;
 	char *path = NULL, *line = NULL;/*Complet command*/
 	pid_t child_pid;
 	int status, n_return = 0;
@@ -56,17 +57,17 @@ int exc_ext(char **av)
  */
 int main(int argc, char **argv)
 {
+	int hist;
 	char *line = NULL, **av = NULL;
 	size_t len = 0;
 	int n_chars = 0, n_return = 0, c_spaces = 0, i = 0;
 	FILE *fp = stdin;
 
-	ex_name = argv[0];
+	(void) argc;
+	(void) argv;
 	hist = 0;
-
 	while (argc)
 	{
-		/*If is interactive mode*/
 		if (isatty(STDIN_FILENO) && fp == stdin)
 			prt_stdo("#cisfun$ ");
 		n_chars = getline(&line, &len, fp);

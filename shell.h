@@ -61,7 +61,9 @@ typedef struct liststr
 	int num;
 	char *str;
 	struct liststr *next;
-} list_t;#ifndef _SHELL_H_
+} list_t;
+
+#ifndef _SHELL_H_
 #define _SHELL_H_
 
 #include <stdio.h>

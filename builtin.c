@@ -43,6 +43,7 @@ void b_exit(char **av, int *l_ret)
  */
 void b_env(char **av, int *l_ret)
 {
+	char **environ = NULL;
 	unsigned int ac = 0, i;/*Runer*/
 
 	for (; av[ac]; ac++)

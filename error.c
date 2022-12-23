@@ -11,6 +11,7 @@ char *err127(char **av, char *str_hist)
 {
 	char *error = NULL;
 	int len;
+	char *ex_name = NULL;
 
 	len = _strlen(ex_name) + _strlen(av[0]) + _strlen(str_hist) + 16;
 	error = malloc(sizeof(char) * (len + 1));
@@ -37,6 +38,7 @@ char *err126(char **av, char *str_hist)
 {
 	char *error;
 	int len;
+	char *ex_name = NULL;
 
 	len = _strlen(ex_name) + _strlen(av[0]) + _strlen(str_hist) + 24;
 	error = malloc(sizeof(char) * (len + 1));
@@ -101,6 +103,7 @@ char *str_num(int n)
  */
 int prt_error(char **av, int n_error)
 {
+	int hist = 0;
 	char *msg_err = NULL;/*Message error*/
 	char *str_hist = NULL;
 

@@ -14,9 +14,9 @@
 #include <string.h>
 
 /*Global Variables*/
-extern char **environ;/*Environemnt*/
-char *ex_name; /*;Shell's executable name*/
-int hist;/*Number of line in the shell*/
+/*extern char **environ;*/
+/*char *ex_name;*/
+/*int hist;*/
 
 /*Structures*/
 
