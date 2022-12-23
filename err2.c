@@ -11,7 +11,6 @@ char *err2_exit(char **av, char *str_hist)
 {
 	char *error;
 	int len;
-	char *ex_name = NULL;
 
 	len = _strlen(ex_name) + _strlen(av[0]) + _strlen(av[1])
 		+ _strlen(str_hist) + 23;

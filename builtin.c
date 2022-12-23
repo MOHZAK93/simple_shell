@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-#include "shell.h"
-
 /**
  * _myexit - exits the shell
  * @info: Structure containing potential arguments. Used to maintain
@@ -141,7 +138,6 @@ void b_exit(char **av, int *l_ret)
  */
 void b_env(char **av, int *l_ret)
 {
-	char **environ = NULL;
 	unsigned int ac = 0, i;/*Runer*/
 
 	for (; av[ac]; ac++)
@@ -160,5 +156,4 @@ void b_env(char **av, int *l_ret)
 		}
 		*l_ret = 0;
 	}
->>>>>>> 5bf20a25bd65f27b431d645f0b2cf5a3b24a1fe6
 }

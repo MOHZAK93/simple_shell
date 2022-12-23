@@ -14,9 +14,9 @@
 #include <string.h>
 
 /*Global Variables*/
-/*extern char **environ;*/
-/*char *ex_name;*/
-/*int hist;*/
+extern char **environ;
+char *ex_name;
+int hist;
 
 /*Structures*/
 
